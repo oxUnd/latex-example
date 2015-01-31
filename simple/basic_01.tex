@@ -1,0 +1,51 @@
+\documentclass[11pt]{article}
+
+% font include CJK
+\usepackage{xltxtra}
+
+\usepackage{listings}
+
+\newfontfamily\Hei{SimHei}
+\newfontfamily\Song{FangSong}
+\newfontfamily\Code{Consolas}
+
+\title{FIS2.z}
+\author{Xiang Shouding}
+
+\begin{document}
+
+{\Code \maketitle}
+
+\section{\Hei 背景}
+    \subsection{\Hei 介绍}
+    % all \Song
+        \Song
+        {\Code FIS2 }推出大概有一年半左右，成绩斐然，具体数据就不详说了。在高速发展的\\
+        背后不免出现这样那样的不适，所以通过对 {\Code FIS }工具改进来更符合前端工程。\\
+        
+    \subsection{\Hei 问题}
+        这块主要罗列一下现在 {\Code FIS2 }的一些一直被诟病的问题\\
+        \begin{itemize}
+            \item {\Code `fis.config.merge` }覆盖问题
+            \item 插件点不支持异步（{ \Code node.js }这点真挫）
+            \item 配置文件{ \Code modules }和{ \Code settings }分开，不直观的问题；
+            \item 若干{ \Code issuess }
+        \end{itemize}
+        
+\section{\Hei 概要设计}
+
+% -- code start --
+\Code
+\begin{lstlisting}[language=c]
+    #include <stdio.h>
+    int main() {
+        printf("Hello,World!\n");
+        return 0;
+    }
+\end{lstlisting}
+
+% -- code end --
+
+\Hei
+
+\end{document}
